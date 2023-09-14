@@ -1,0 +1,7 @@
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\bin\Debug\BaiTap2.exe.config
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\bin\Debug\BaiTap2.exe
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\bin\Debug\BaiTap2.pdb
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\obj\Debug\BaiTap2.csproj.AssemblyReference.cache
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\obj\Debug\BaiTap2.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\obj\Debug\BaiTap2.exe
+C:\Users\kieth\OneDrive\Máy tính\BaiTap2\obj\Debug\BaiTap2.pdb
