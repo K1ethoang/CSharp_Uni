@@ -1,0 +1,14 @@
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\bin\Debug\BaiTap3.exe.config
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\bin\Debug\BaiTap3.exe
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\bin\Debug\BaiTap3.pdb
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\obj\Debug\BaiTap3.csproj.AssemblyReference.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\obj\Debug\BaiTap3.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\obj\Debug\BaiTap3.exe
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Bài tập\15092023\BaiTap3\obj\Debug\BaiTap3.pdb
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\obj\Debug\BaiTap3.csproj.AssemblyReference.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\obj\Debug\BaiTap3.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\obj\Debug\BaiTap3.exe
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\obj\Debug\BaiTap3.pdb
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\bin\Debug\BaiTap3.exe.config
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\bin\Debug\BaiTap3.exe
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\BaiTap\15092023\BaiTap3\bin\Debug\BaiTap3.pdb
