@@ -1,0 +1,40 @@
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.exe
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.deps.json
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.pdb
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form1.resources
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\refint\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.pdb
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\ref\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form2.resources
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form3.resources
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form4.resources
+C:\Users\kieth\OneDrive\Máy tính\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form5.resources
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.exe
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.deps.json
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\bin\Debug\net7.0-windows\WinFormsApp1.pdb
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form1.resources
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form2.resources
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form3.resources
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form4.resources
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.Form5.resources
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\refint\WinFormsApp1.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.pdb
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\WinFormsApp1\obj\Debug\net7.0-windows\ref\WinFormsApp1.dll
