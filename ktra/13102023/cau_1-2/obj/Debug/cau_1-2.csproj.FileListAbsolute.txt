@@ -1,0 +1,7 @@
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\bin\Debug\cau_1-2.exe.config
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\bin\Debug\cau_1-2.exe
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\bin\Debug\cau_1-2.pdb
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\obj\Debug\cau_1-2.csproj.AssemblyReference.cache
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\obj\Debug\cau_1-2.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\obj\Debug\cau_1-2.exe
+C:\Users\kieth\OneDrive\Máy tính\cau_1-2\obj\Debug\cau_1-2.pdb

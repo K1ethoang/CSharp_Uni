@@ -1,0 +1,16 @@
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\bin\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.exe
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\bin\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.deps.json
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\bin\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.runtimeconfig.json
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\bin\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.dll
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\bin\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.pdb
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\_6251071049_Hoàng_Gia_Kiệt.Form1.resources
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.csproj.GenerateResource.cache
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.AssemblyInfoInputs.cache
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.AssemblyInfo.cs
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.csproj.CoreCompileInputs.cache
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.dll
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\refint\6251071049_Hoàng Gia Kiệt.dll
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.pdb
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\6251071049_Hoàng Gia Kiệt.genruntimeconfig.cache
+C:\Users\kieth\OneDrive\Máy tính\6251071049_Hoàng Gia Kiệt\obj\Debug\net7.0-windows\ref\6251071049_Hoàng Gia Kiệt.dll
