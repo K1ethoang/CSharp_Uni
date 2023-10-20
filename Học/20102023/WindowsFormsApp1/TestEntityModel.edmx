@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="product_2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Catalog">
+          <Key>
+            <PropertyRef Name="CatalogCode" />
+          </Key>
+          <Property Name="CatalogCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CatalogName" Type="nchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductCode" />
+          </Key>
+          <Property Name="ProductCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductName" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="ProductPrice" Type="float" Nullable="false" />
+          <Property Name="CatalogCode" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Product_Catalog1">
+          <End Role="Catalog" Type="Self.Catalog" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Catalog">
+              <PropertyRef Name="CatalogCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CatalogCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="product_2ModelStoreContainer">
+          <EntitySet Name="Catalog" EntityType="Self.Catalog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Product_Catalog1" Association="Self.FK_Product_Catalog1">
+            <End Role="Catalog" EntitySet="Catalog" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="product_2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Catalog">
+          <Key>
+            <PropertyRef Name="CatalogCode" />
+          </Key>
+          <Property Name="CatalogCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CatalogName" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_Catalog1" FromRole="Catalog" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductCode" />
+          </Key>
+          <Property Name="ProductCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ProductPrice" Type="Double" Nullable="false" />
+          <Property Name="CatalogCode" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Catalog" Relationship="Self.FK_Product_Catalog1" FromRole="Product" ToRole="Catalog" />
+        </EntityType>
+        <Association Name="FK_Product_Catalog1">
+          <End Role="Catalog" Type="Self.Catalog" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Catalog">
+              <PropertyRef Name="CatalogCode" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CatalogCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="product_2Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Catalog" EntityType="Self.Catalog" />
+          <EntitySet Name="Product" EntityType="Self.Product" />
+          <AssociationSet Name="FK_Product_Catalog1" Association="Self.FK_Product_Catalog1">
+            <End Role="Catalog" EntitySet="Catalog" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="product_2ModelStoreContainer" CdmEntityContainer="product_2Entities1">
+          <EntitySetMapping Name="Catalog">
+            <EntityTypeMapping TypeName="product_2Model.Catalog">
+              <MappingFragment StoreEntitySet="Catalog">
+                <ScalarProperty Name="CatalogCode" ColumnName="CatalogCode" />
+                <ScalarProperty Name="CatalogName" ColumnName="CatalogName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="product_2Model.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+                <ScalarProperty Name="CatalogCode" ColumnName="CatalogCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

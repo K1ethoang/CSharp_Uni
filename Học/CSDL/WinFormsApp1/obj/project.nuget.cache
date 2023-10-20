@@ -1,9 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "UTQ9A5y5QrpqHpeaNKAvp8uBkYTQhwn3MKvX3sgoXUup/O9TbF+D+LH0qGCH9M5kYZJztsym/uYfTaXB4hrybA==",
+  "dgSpecHash": "/piATRaDViyUnROKD3dhXSvYsB9Q5D4AeoS1pEHubAVUV521bnN61axdBKCcQIQu+aZOWEPgu7KvL298cABdFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kieth\\OneDrive\\Desktop\\Study\\Csharp_Uni\\Học\\CSDL\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kieth\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.12\\microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.12\\microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\kieth\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\kieth\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\kieth\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\kieth\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
@@ -14,5 +26,16 @@
     "C:\\Users\\kieth\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\kieth\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
 }

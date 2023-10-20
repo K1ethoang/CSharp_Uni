@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Data;
 using System.Data.SqlClient;
+using WinFormsApp1.DAO;
 
 namespace WinFormsApp1
 {
@@ -24,73 +25,52 @@ namespace WinFormsApp1
             }
         }
 
-        private DataTable execSql(string sql, params object[] args)
-        {
-            DataTable data = new DataTable();
-
-            string connectStr = @"Data Source=K1ETHOANG;Initial Catalog=c_product;Integrated Security=True";
-
-            using (SqlConnection connection = new SqlConnection(connectStr))
-            {
-                connection.Open();
-
-                string query = sql;
-
-                SqlCommand cmd = new SqlCommand(query, connection);
-
-                if (args.Length > 0)
-                {
-                    string[] processSql = sql.Split(" ");
-
-                    List<string> paramList = new List<string>();
-
-                    foreach (string prm in processSql)
-                    {
-                        if (prm.StartsWith("@"))
-                        {
-                            if (prm.EndsWith(","))
-                                prm.Remove(prm.Length - 1);
-                            paramList.Add(prm);
-                        }
-                    }
-
-                    for (int i = 0; i < args.Length; i++)
-                        cmd.Parameters.AddWithValue(paramList[i], args[i]);
-                }
-
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-
-                adapter.Fill(data);
-
-                connection.Close();
-            }
-
-            return data;
-        }
-
         private void btnView_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM Product";
-            dtvProduct.DataSource = execSql(query);
+            Business.Business.Instance.See(dgvProduct);
         }
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            string query = "select * from product where productName like @keyword and productCode > @number";
 
-            Object[] prms = new object[] { "%" + txtFind.Text + "%", 1};
-
-            DataTable data = execSql(query, prms);
-
-            dtvProduct.DataSource = data;
-
-            txtFind.Clear();
+            Business.Business.Instance.Search(dgvProduct, txtFind.Text);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (Business.Business.Instance.Add(dgvProduct))
+            {
+                MessageBox.Show("Thêm thành công", "Thông báo!");
+                Business.Business.Instance.See(dgvProduct);
+            }
+            else
+                MessageBox.Show("Thêm không thành công", "Thông báo!");
 
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Xác nhận xoá", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (Business.Business.Instance.Delete(dgvProduct))
+                {
+                    MessageBox.Show("Xoá thành công", "Thông báo!");
+                    Business.Business.Instance.See(dgvProduct);
+                }
+                else
+                    MessageBox.Show("Có lỗi khi xoá", "Thông báo!");
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (Business.Business.Instance.Edit(dgvProduct))
+            {
+                MessageBox.Show("Sửa thành công", "Thông báo!");
+                Business.Business.Instance.See(dgvProduct);
+            }
+            else
+                MessageBox.Show("Có lỗi khi sửa", "Thông báo!");
+        }
     }
 }

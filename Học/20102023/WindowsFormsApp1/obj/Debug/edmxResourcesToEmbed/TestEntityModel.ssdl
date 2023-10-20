@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="product_2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Catalog">
+    <Key>
+      <PropertyRef Name="CatalogCode" />
+    </Key>
+    <Property Name="CatalogCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CatalogName" Type="nchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Name="ProductCode" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProductPrice" Type="float" Nullable="false" />
+    <Property Name="CatalogCode" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Product_Catalog1">
+    <End Role="Catalog" Type="Self.Catalog" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalog">
+        <PropertyRef Name="CatalogCode" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CatalogCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="product_2ModelStoreContainer">
+    <EntitySet Name="Catalog" EntityType="Self.Catalog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Product_Catalog1" Association="Self.FK_Product_Catalog1">
+      <End Role="Catalog" EntitySet="Catalog" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

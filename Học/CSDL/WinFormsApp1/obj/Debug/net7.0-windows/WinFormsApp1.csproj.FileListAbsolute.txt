@@ -22,3 +22,15 @@ C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Deb
 C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
 C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\obj\Debug\net7.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\EntityFramework.SqlServer.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\EntityFramework.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\kieth\OneDrive\Desktop\Study\Csharp_Uni\Học\CSDL\WinFormsApp1\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll

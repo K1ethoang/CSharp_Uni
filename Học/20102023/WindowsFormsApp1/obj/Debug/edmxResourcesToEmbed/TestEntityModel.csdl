@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="product_2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Catalog">
+    <Key>
+      <PropertyRef Name="CatalogCode" />
+    </Key>
+    <Property Name="CatalogCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CatalogName" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Catalog1" FromRole="Catalog" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Name="ProductCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="ProductPrice" Type="Double" Nullable="false" />
+    <Property Name="CatalogCode" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Catalog" Relationship="Self.FK_Product_Catalog1" FromRole="Product" ToRole="Catalog" />
+  </EntityType>
+  <Association Name="FK_Product_Catalog1">
+    <End Role="Catalog" Type="Self.Catalog" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalog">
+        <PropertyRef Name="CatalogCode" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CatalogCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="product_2Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Catalog" EntityType="Self.Catalog" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <AssociationSet Name="FK_Product_Catalog1" Association="Self.FK_Product_Catalog1">
+      <End Role="Catalog" EntitySet="Catalog" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

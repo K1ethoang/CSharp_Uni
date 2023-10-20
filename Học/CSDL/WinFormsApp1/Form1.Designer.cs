@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dtvProduct = new DataGridView();
+            dgvProduct = new DataGridView();
             txtFind = new TextBox();
             btnFind = new Button();
             btnAdd = new Button();
@@ -36,18 +36,18 @@
             btnDelete = new Button();
             btnView = new Button();
             btnExit = new Button();
-            ((System.ComponentModel.ISupportInitialize)dtvProduct).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduct).BeginInit();
             SuspendLayout();
             // 
-            // dtvProduct
+            // dgvProduct
             // 
-            dtvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtvProduct.Location = new Point(12, 12);
-            dtvProduct.Name = "dtvProduct";
-            dtvProduct.RowHeadersWidth = 51;
-            dtvProduct.RowTemplate.Height = 29;
-            dtvProduct.Size = new Size(520, 354);
-            dtvProduct.TabIndex = 0;
+            dgvProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProduct.Location = new Point(12, 12);
+            dgvProduct.Name = "dgvProduct";
+            dgvProduct.RowHeadersWidth = 51;
+            dgvProduct.RowTemplate.Height = 29;
+            dgvProduct.Size = new Size(520, 354);
+            dgvProduct.TabIndex = 0;
             // 
             // txtFind
             // 
@@ -88,6 +88,7 @@
             btnEdit.TabIndex = 4;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
@@ -98,6 +99,7 @@
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnView
             // 
@@ -134,20 +136,20 @@
             Controls.Add(btnAdd);
             Controls.Add(btnFind);
             Controls.Add(txtFind);
-            Controls.Add(dtvProduct);
+            Controls.Add(dgvProduct);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cập nhật thông tin sản phẩm";
             FormClosing += Form1_FormClosing;
-            ((System.ComponentModel.ISupportInitialize)dtvProduct).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProduct).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dtvProduct;
+        private DataGridView dgvProduct;
         private TextBox txtFind;
         private Button btnFind;
         private Button btnAdd;
