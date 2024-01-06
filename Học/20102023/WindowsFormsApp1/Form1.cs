@@ -72,6 +72,59 @@ namespace WindowsFormsApp1
         private void btnExportExcel_Click(object sender, EventArgs e)
         {
             Excel.Application excelApp = new Excel.Application();
+            Excel.Workbook excelWb = excelApp.Workbooks.Add(Excel.XlWBATemplate.xlWBATWorksheet);
+            Excel.Worksheet excelWs = excelApp.Worksheets[1];
+
+            Excel.Range excelRange = excelWs.Cells[1, 1];
+            excelRange.Font.Size = 16;
+            excelRange.Font.Bold = true;
+            excelRange.Font.Color = Color.Red;
+            excelRange.Value = "DANH MỤC SẢN PHẨM";
+
+            // Lấy danh mục
+            var catalogs = db.Catalog.Select(c => new { code = c.CatalogCode, name = c.CatalogName }).ToList();
+            int row = 2;
+
+            foreach (var c in catalogs)
+            {
+                excelWs.Range["A" + row].Font.Bold = true;
+                excelWs.Range["A" + row].Value = c.name;
+                row++;
+
+                // Lấy sp theo danh mục
+                var products = from p in db.Product where p.CatalogCode == c.code select p;
+                foreach (var p in products)
+                {
+                    excelWs.Range["A" + row].Value = p.ProductCode;
+                    excelWs.Range["B" + row].ColumnWidth = 50;
+                    excelWs.Range["B" + row].Value = p.ProductName;
+                    excelWs.Range["C" + row].Value = p.ProductPrice;
+                    row++;
+                }
+            }
+            excelWs.Name = "DanhMucSanPham";
+            excelWb.Activate();
+
+            // Lưu file
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                excelWb.SaveAs(saveFileDialog.FileName);
+            excelApp.Quit();
+        }
+
+        private void btnExportReport_Click(object sender, EventArgs e)
+        {
+            // Chuẩn bị nguồn dữ liệu
+            var data = db.Product.Select(p => new { ProductCode = p.ProductCode, ProductName = p.ProductName, ProductPrice = p.ProductPrice, CatalogName = p.Catalog.CatalogName }).ToList();
+
+            // Gán nguồn dữ liệu cho CrystalReport
+            CrystalReport1 rpt = new CrystalReport1();
+            rpt.SetDataSource(data);
+
+            // Hiển thị báo cáo
+            Form2 fRpt = new Form2();
+            fRpt.crystalReportViewer1.ReportSource = rpt;
+            fRpt.ShowDialog();
         }
     }
 }

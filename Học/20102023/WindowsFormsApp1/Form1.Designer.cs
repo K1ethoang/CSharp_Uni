@@ -34,6 +34,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnExportExcel = new System.Windows.Forms.Button();
+            this.btnExportReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,19 +95,31 @@
             // btnExportExcel
             // 
             this.btnExportExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportExcel.Location = new System.Drawing.Point(748, 231);
+            this.btnExportExcel.Location = new System.Drawing.Point(748, 180);
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Size = new System.Drawing.Size(211, 36);
             this.btnExportExcel.TabIndex = 5;
-            this.btnExportExcel.Text = "Xuất Excel";
+            this.btnExportExcel.Text = "Export Excel";
             this.btnExportExcel.UseVisualStyleBackColor = true;
             this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click);
+            // 
+            // btnExportReport
+            // 
+            this.btnExportReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportReport.Location = new System.Drawing.Point(748, 222);
+            this.btnExportReport.Name = "btnExportReport";
+            this.btnExportReport.Size = new System.Drawing.Size(211, 36);
+            this.btnExportReport.TabIndex = 6;
+            this.btnExportReport.Text = "Report";
+            this.btnExportReport.UseVisualStyleBackColor = true;
+            this.btnExportReport.Click += new System.EventHandler(this.btnExportReport_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 368);
+            this.Controls.Add(this.btnExportReport);
             this.Controls.Add(this.btnExportExcel);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -131,6 +144,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExportExcel;
+        private System.Windows.Forms.Button btnExportReport;
     }
 }
 
